@@ -4,7 +4,7 @@ function __inject__() {
     echo -e '
 Spawned Xrao Ducky...
    _
-__(•)<  ‹—(say uwu >_<
+__(•)<  ‹—(Honk
 \___)
 
 [+] Applying system optimizations'

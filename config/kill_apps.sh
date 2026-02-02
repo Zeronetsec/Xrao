@@ -1,7 +1,7 @@
 # Xrao Project
 
 kill="
-com.example.com
+com.example.apps
 "
 
 # Copyright (c) 2026 Zeronetsec

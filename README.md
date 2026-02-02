@@ -74,7 +74,7 @@ sh xrao.sh --path="/path/to/Xrao" <options>
 
 **Example:**
 ```bash
-sh /sdcard/Download/Xrao/xrao.sh --path="/sdcard/Download/Xrao" --inject
+sh /sdcard/Download/Xrao/xrao.sh --path="/sdcard/Download/Xrao" --status
 ```
 
 ## Configuration

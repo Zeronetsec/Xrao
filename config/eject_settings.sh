@@ -9,6 +9,6 @@ reset_touch_booster=true
 reset_game_mode=true
 reset_low_latency_mode=true
 reset_whitelist_apps=true
-reset_system_animation=true
+reset_system_animation=false
 
 # Copyright (c) 2026 Zeronetsec

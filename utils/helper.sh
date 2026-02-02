@@ -1,7 +1,8 @@
 # Xrao Project
 
 function __helper__() {
-    echo -e "\nUsage: $name --path=\"/path/to/Xrao\" <options>"
+    echo -e "\nUsage:"
+    echo -e "› $name --path=\"$path\" <options>"
 
     echo -e "\nAvailable options:"
     echo -e "› --inject"
@@ -12,7 +13,7 @@ function __helper__() {
     echo -e "› --help"
 
     echo -e "\nExample:"
-    echo -e "› $name --path=\"/sdcard/Download/Xrao\" --inject\n"
+    echo -e "› $name --path=\"$path\" --status\n"
 }
 
 # Copyright (c) 2026 Zeronetsec

@@ -5,15 +5,15 @@ name=$(basename "$0")
 
 if [[ -z "$1" && -z "$2" ]]; then
     echo -e "\n[!] Invalid input!"
-    echo -e "[!] Try: $name --path=\"/path/to/xrao\" --help"
-    echo -e "[!] Example: $name --path=\"/sdcard/download/xrao\" --help\n"
+    echo -e "[!] Try: $name --path=\"/path/to/Xrao\" --help"
+    echo -e "[!] Example: $name --path=\"/sdcard/Download/Xrao\" --status\n"
     exit 1
 fi
 
 if [[ ! "$1" == "--path="* ]]; then
     echo -e "\n[!] Invalid Options: $1"
-    echo -e "[!] Try: $name --path=\"/path/to/xrao\" --help"
-    echo -e "[!] Example: $name --path=\"/sdcard/download/xrao\" --help\n"
+    echo -e "[!] Try: $name --path=\"/path/to/Xrao\" --help"
+    echo -e "[!] Example: $name --path=\"/sdcard/Download/Xrao\" --status\n"
     exit 1
 fi
 
@@ -52,13 +52,13 @@ case "$2" in
     *)
         if [[ -n "$path" && -z "$2" ]]; then
             echo -e "\n[!] Invalid input!"
-            echo -e "[!] Try: $name --path=\"/path/to/xrao\" --help"
-            echo -e "[!] Example: $name --path=\"/sdcard/download/xrao\" --help\n"
+            echo -e "[!] Try: $name --path=\"$path\" --help"
+            echo -e "[!] Example: $name --path=\"$path\" --status\n"
             exit 1
         fi
         echo -e "\n[!] Invalid options: $2"
-        echo -e "[!] Try: $name --path=\"/path/to/xrao\" --help"
-        echo -e "[!] Example: $name --path=\"/sdcard/download/xrao\" --help\n"
+        echo -e "[!] Try: $name --path=\"$path\" --help"
+        echo -e "[!] Example: $name --path=\"$path\" --status\n"
         exit 1
         ;;
 esac
