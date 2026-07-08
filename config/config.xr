@@ -1,0 +1,54 @@
+[ Global ]
+- window_settings = true
+    - window_animation = 0.5
+    - window_transition = 0.5
+    - window_animator = 0.5
+- kill_apps_process = true
+    - com.facebook.katana
+    - com.facebook.services
+    - com.instagram.android
+    - com.zhiliaoapp.musically
+    - com.ss.android.ugc.aweme.lite
+    - com.whatsapp
+- driver = angle # default/angle/native
+[ END ]
+
+[ App: com.mobile.legends ]
+- performance_mode = true
+    - mode = 2
+    - downscale = 1.0
+    - fps = 120
+- enable_angle = false
+- disable_thermal_throttle = false
+- enable_dynamic_updatable_driver = true
+- enable_touch_booster = true
+- enable_game_mode = true
+- enable_low_latency_mode = true
+- whitelist_apps = true
+[ END ]
+
+[ App: com.miHoYo.GenshinImpact ]
+- performance_mode = true
+    - mode = 2
+    - downscale = 0.85
+    - fps = 60
+- enable_angle = true
+- disable_thermal_throttle = true
+- enable_dynamic_updatable_driver = true
+- enable_touch_booster = false
+- enable_game_mode = true
+- enable_low_latency_mode = false
+- whitelist_apps = true
+[ END ]
+
+[ Reset ]
+- reset_window_animation = true
+- reset_thermal_throttle = true
+- reset_performance_mode = true
+- reset_driver = true
+- reset_dynamic_updatable_driver = true
+- reset_touch_booster = true
+- reset_game_mode = true
+- reset_low_latency_mode = true
+- reset_whitelist_apps = true
+[ END ]

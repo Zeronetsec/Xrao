@@ -1,119 +1,45 @@
-<!-- Xrao Project -->
+<!-- https://github.com/Zeronetsec/Xrao -->
 
-[![version](https://img.shields.io/badge/Xrao-Version%201.0-blue.svg?maxAge=259200)]()
+[![version](https://img.shields.io/badge/Xrao-Version%200.1-blue.svg)]()
 [![os](https://img.shields.io/badge/Supported%20OS-Android-blue.svg)]()
-[![license](https://img.shields.io/badge/License-MIT-blue.svg)]()
+[![license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 # Xrao
-Xrao is a simple tool to help stabilize Android performance. <br>
-It supports both rooted and non-rooted Android devices. <br>
-It is recommended to run this tool using
-[Brevent](https://play.google.com/store/apps/details?id=me.piebridge.brevent).
-
-**Note:** <br>
-Xrao behavior depends on the device and system environment. <br>
-Performance improvements may vary — some devices may see noticeable changes, while others may experience minimal or no difference.
-
-## Requirements
-- Android 14 or higher (rooted or non-rooted)
-- Wireless ADB support
-- Toybox or BusyBox
+Xrao is a declarative, indentation-based configuration DSL designed for structured Android system tweaking and automation via ADB.
 
 ## Features
-- Thermal throttling stabilization
-- Background app termination
-- Resolution downscaling
-- Forced FPS locking
-- Force enable ANGLE
-- Enable dynamic updatable graphics driver
-- Touch response booster
-- Low latency mode
-- App whitelisting and more...
+- Parse declarative indentation-based DSL configuration rules.
+- Apply full configuration rules to the Android system over ADB.
+- Deploy isolated global-only rules from the configuration file.
+- Revert all applied modifications and reset system states completely.
+- And more features.
+
+## Disclaimer
+Please read [.docs/disclaimer.md](.docs/disclaimer.md) before using this tool. </br>
+Use this software at your own risk. </br>
+The author is not responsible for any damage, data loss, or issues that may result from its use.
 
 ## Installation
-1. Download the ZIP file.
-2. Extract the archive.
-3. Run the tool.
-
-## Usage
+Quick install:
 ```bash
-sh xrao.sh --path="/path/to/Xrao" <options>
+git clone https://github.com/Zeronetsec/Xrao
+cd Xrao
+chmod +x install.sh
+./install.sh
 ```
+For more detailed installation and uninstallation instructions, see [.docs/install_and_uninstall.md](.docs/install_and_uninstall.md).
 
-<strong>Available options:</strong>
-<table>
-    <tr>
-        <th>Option</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>--inject</td>
-        <td>Apply performance tweaks</td>
-    </tr>
-    <tr>
-        <td>--eject</td>
-        <td>Remove applied tweaks and restore defaults</td>
-    </tr>
-    <tr>
-        <td>--status</td>
-        <td>Show current tweak status</td>
-    </tr>
-    <tr>
-        <td>--show-config</td>
-        <td>Display current configuration settings</td>
-    </tr>
-    <tr>
-        <td>--help</td>
-        <td>Show available commands and usage</td>
-    </tr>
-    <tr>
-        <td>--version</td>
-        <td>Show tool version</td>
-    </tr>
-</table>
-
-**Example:**
+## Usage Example
 ```bash
-sh /sdcard/Download/Xrao/xrao.sh --path="/sdcard/Download/Xrao" --status
+xrao --pair 192.168.x.x:5555
+xrao --connect 192.168.x.x:5555
+xrao --apply
+xrao --generate --mode apply-global-only --config ~/mycustom_config.xr --out ~/mytweak.sh
+xrao --status
 ```
+And more commands.
 
-## Configuration
-Xrao uses 5 configuration files inside the `/config/` directory to control its behavior.
-
-<table>
-    <tr>
-        <th>File</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>xrao_settings.sh</td>
-        <td>
-            Basic settings such as FPS, downscaling, animations, and more.<br>
-            These settings are not global and only apply to apps listed in affected_apps.sh.
-        </td>
-    </tr>
-    <tr>
-        <td>affected_apps.sh</td>
-        <td>Configure which applications are affected by Xrao.</td>
-    </tr>
-    <tr>
-        <td>kill_apps.sh</td>
-        <td>Define which applications will be terminated.</td>
-    </tr>
-    <tr>
-        <td>inject_settings.sh</td>
-        <td>Configure actions that will be applied during injection.</td>
-    </tr>
-    <tr>
-        <td>eject_settings.sh</td>
-        <td>Configure actions that will be applied during ejection.</td>
-    </tr>
-</table>
-
-## Warning
-Xrao interacts with system-level components and may affect device behavior. <br>
-Improper usage may cause instability or unexpected results. <br>
-Use at your own risk. <br>
-For more detailed information, please read the `DISCLAIMER` file.
+## License
+This project is licensed under the MIT License.
 
 <!-- Copyright (c) 2026 Zeronetsec -->

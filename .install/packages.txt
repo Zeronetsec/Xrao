@@ -1,0 +1,4 @@
+golang
+adb::{android-tools}
+bat
+zip

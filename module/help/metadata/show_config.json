@@ -1,0 +1,5 @@
+{
+    "Command": "--show-config",
+    "Args": "[<config.xr>]",
+    "Description": "display the configuration file with syntax highlighting"
+}

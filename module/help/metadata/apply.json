@@ -1,0 +1,5 @@
+{
+    "Command": "--apply",
+    "Args": "[<config.xr>]",
+    "Description": "apply the configuration rules to the system"
+}

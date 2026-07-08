@@ -1,0 +1,5 @@
+{
+    "Command": "--disconnect",
+    "Args": "",
+    "Description": "disconnect from device"
+}

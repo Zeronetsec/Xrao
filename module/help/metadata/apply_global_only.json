@@ -1,0 +1,5 @@
+{
+    "Command": "--apply-global-only",
+    "Args": "[<config.xr>]",
+    "Description": "apply only the global rules from the configuration"
+}

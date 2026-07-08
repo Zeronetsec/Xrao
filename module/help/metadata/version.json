@@ -1,0 +1,5 @@
+{
+    "Command": "--version",
+    "Args": "",
+    "Description": "show the current version"
+}

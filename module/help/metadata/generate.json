@@ -1,0 +1,5 @@
+{
+    "Command": "--generate",
+    "Args": "--mode <apply|apply-global-only|reset> --out <file> [--config <config.xr>]",
+    "Description": "generate a new configuration file based on the specified mode"
+}

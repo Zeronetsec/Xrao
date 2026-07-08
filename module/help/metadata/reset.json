@@ -1,0 +1,5 @@
+{
+    "Command": "--reset",
+    "Args": "[<config.xr>]",
+    "Description": "reset and revert all applied configurations to default"
+}

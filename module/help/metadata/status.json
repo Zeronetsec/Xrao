@@ -1,0 +1,5 @@
+{
+    "Command": "--status",
+    "Args": "[<config.xr>]",
+    "Description": "check and display the current status of the configuration"
+}

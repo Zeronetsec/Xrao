@@ -1,0 +1,5 @@
+{
+    "Command": "--connect",
+    "Args": "<ip>:<port>",
+    "Description": "establish a connection to the target device via network"
+}

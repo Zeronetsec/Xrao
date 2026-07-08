@@ -1,0 +1,3 @@
+.install/** linguist-vendored
+config/** linguist-vendored
+install.sh linguist-vendored

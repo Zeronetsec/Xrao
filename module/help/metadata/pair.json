@@ -1,0 +1,5 @@
+{
+    "Command": "--pair",
+    "Args": "<ip>:<port>",
+    "Description": "pair with the target device using the specified network address"
+}
