@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package execparser
 
 import (
@@ -294,3 +296,5 @@ func CheckStatus(inputPath string) {
         )
     }
 }
+
+// Copyright (c) 2026 Zeronetsec

@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package invinput
 
 import (
@@ -16,3 +18,5 @@ func InvalidOption(input string) {
         color.R, color.N, color.GG, color.N,
     )
 }
+
+// Copyright (c) 2026 Zeronetsec

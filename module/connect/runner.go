@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package connect
 
 import (
@@ -16,3 +18,5 @@ func Runner(target string) {
 
     _ = shell.ExecLivef("adb connect %s", target)
 }
+
+// Copyright (c) 2026 Zeronetsec

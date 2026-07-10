@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package banner
 
 import (
@@ -24,3 +26,5 @@ func Show() {
         color.B, string(data), color.N,
     )
 }
+
+// Copyright (c) 2026 Zeronetsec

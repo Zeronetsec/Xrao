@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package parser
 
 import (
@@ -407,3 +409,5 @@ func ParseReset(inputPath, outputPath string) {
         )
     }
 }
+
+// Copyright (c) 2026 Zeronetsec

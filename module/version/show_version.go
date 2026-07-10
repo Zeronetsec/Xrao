@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package version
 
 import (
@@ -33,3 +35,5 @@ func ShowVersion() {
         color.N, color.GG, homepage, color.N,
     )
 }
+
+// Copyright (c) 2026 Zeronetsec

@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package main
 
 import (
@@ -11,3 +13,5 @@ func main() {
     input := strings.Join(args, " ")
     console.XraoConsole(input)
 }
+
+// Copyright (c) 2026 Zeronetsec

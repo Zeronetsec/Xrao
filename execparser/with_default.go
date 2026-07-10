@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package execparser
 
 import (
@@ -10,3 +12,5 @@ func withDefault(val, defaultVal string) string {
     }
     return color.GG + val
 }
+
+// Copyright (c) 2026 Zeronetsec

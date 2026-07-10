@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package console
 
 import (
@@ -49,3 +51,5 @@ func (c Generate) Execute(args []string) {
 
     generate.Runner(configPath, outputPath, runMode)
 }
+
+// Copyright (c) 2026 Zeronetsec

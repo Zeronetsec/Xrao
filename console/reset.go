@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package console
 
 import (
@@ -13,3 +15,5 @@ func (c Reset) Execute(args []string) {
 
     reset.Runner(configPath)
 }
+
+// Copyright (c) 2026 Zeronetsec

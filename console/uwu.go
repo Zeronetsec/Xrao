@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package console
 
 import (
@@ -12,3 +14,5 @@ func (c Uwu) Execute(args []string) {
     uwu.Nyaa(5 * time.Second)
     fmt.Printf("\x1b[?25h")
 }
+
+// Copyright (c) 2026 Zeronetsec

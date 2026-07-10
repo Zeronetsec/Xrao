@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package color
 
 const (
@@ -10,3 +12,5 @@ const (
     CC = "\x1b[0;36m"
     WW = "\x1b[0;37m"
 )
+
+// Copyright (c) 2026 Zeronetsec

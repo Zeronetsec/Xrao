@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package shell
 
 import (
@@ -42,3 +44,5 @@ func Execf(format string, a ...interface{}) (string, error) {
     }
     return stdout.String(), nil
 }
+
+// Copyright (c) 2026 Zeronetsec

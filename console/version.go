@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package console
 
 import (
@@ -8,3 +10,5 @@ type Version struct{}
 func (c Version) Execute(args []string) {
     version.ShowVersion()
 }
+
+// Copyright (c) 2026 Zeronetsec

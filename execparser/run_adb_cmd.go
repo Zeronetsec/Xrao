@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package execparser
 
 import (
@@ -14,3 +16,5 @@ func runAdbCmd(cmd string) string {
     }
     return strings.TrimSpace(out)
 }
+
+// Copyright (c) 2026 Zeronetsec

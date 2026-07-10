@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package console
 
 import (
@@ -8,3 +10,5 @@ type Disconnect struct{}
 func (c Disconnect) Execute(args []string) {
     disconnect.Runner()
 }
+
+// Copyright (c) 2026 Zeronetsec

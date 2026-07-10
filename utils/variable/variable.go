@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package variable
 
 import (
@@ -28,3 +30,5 @@ func init() {
     Tmp = filepath.Join(Prefix, "tmp")
     Config = filepath.Join(Home, ".xrao", "config.xr")
 }
+
+// Copyright (c) 2026 Zeronetsec

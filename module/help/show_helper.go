@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package help
 
 import (
@@ -65,3 +67,5 @@ func ShowHelper() {
         )
     }
 }
+
+// Copyright (c) 2026 Zeronetsec

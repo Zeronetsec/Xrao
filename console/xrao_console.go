@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package console
 
 import (
@@ -34,3 +36,5 @@ func XraoConsole(input string) {
         os.Exit(1)
     }
 }
+
+// Copyright (c) 2026 Zeronetsec

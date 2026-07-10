@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package generate
 
 import (
@@ -89,3 +91,5 @@ func Runner(config, out, mode string) {
         color.GG, color.N, color.GG, out, color.N,
     )
 }
+
+// Copyright (c) 2026 Zeronetsec

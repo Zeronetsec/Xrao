@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package shell
 
 import (
@@ -28,3 +30,5 @@ func ExecLivef(format string, a ...interface{}) error {
 
     return cmd.Run()
 }
+
+// Copyright (c) 2026 Zeronetsec

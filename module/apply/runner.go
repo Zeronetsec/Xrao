@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package apply
 
 import (
@@ -169,3 +171,5 @@ func Runner(configPath string) {
         color.GG, color.N,
     )
 }
+
+// Copyright (c) 2026 Zeronetsec

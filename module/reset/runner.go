@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package reset
 
 import (
@@ -172,3 +174,5 @@ func Runner(configPath string) {
         color.GG, color.N,
     )
 }
+
+// Copyright (c) 2026 Zeronetsec

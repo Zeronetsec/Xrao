@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package console
 
 import (
@@ -15,3 +17,5 @@ func (c Pair) Execute(args []string) {
 
     pair.Runner(args[2])
 }
+
+// Copyright (c) 2026 Zeronetsec

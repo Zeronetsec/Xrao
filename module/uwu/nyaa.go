@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package uwu
 
 import (
@@ -35,3 +37,5 @@ func Nyaa(duration time.Duration) {
         }
     }
 }
+
+// Copyright (c) 2026 Zeronetsec

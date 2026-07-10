@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package generate
 
 import (
@@ -15,3 +17,5 @@ func initScript(outputPath string) error {
     header := []byte("#!/system/bin/sh\n")
     return os.WriteFile(outputPath, header, 0644)
 }
+
+// Copyright (c) 2026 Zeronetsec

@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package birthday
 
 import (
@@ -17,3 +19,5 @@ func Show() {
         fmt.Println()
     }
 }
+
+// Copyright (c) 2026 Zeronetsec

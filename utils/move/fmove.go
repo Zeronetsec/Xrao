@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package move
 
 import (
@@ -24,3 +26,5 @@ func Fmove(src, dst string) error {
 
     return os.Remove(src)
 }
+
+// Copyright (c) 2026 Zeronetsec

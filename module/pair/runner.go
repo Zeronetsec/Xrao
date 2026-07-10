@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package pair
 
 import (
@@ -29,3 +31,5 @@ func Runner(target string) {
         return
     }
 }
+
+// Copyright (c) 2026 Zeronetsec

@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package help
 
 type Helper struct {
@@ -5,3 +7,5 @@ type Helper struct {
     Args string `json:"Args"`
     Description string `json:"Description"`
 }
+
+// Copyright (c) 2026 Zeronetsec

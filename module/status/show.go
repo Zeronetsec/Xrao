@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package status
 
 import (
@@ -20,7 +22,7 @@ func Show(conf string) {
     }
 
     if conf == "" {
-        conf = variable.Config 
+        conf = variable.Config
     }
 
     if _, err := os.Stat(conf); os.IsNotExist(err) {
@@ -33,3 +35,5 @@ func Show(conf string) {
 
     execparser.CheckStatus(conf)
 }
+
+// Copyright (c) 2026 Zeronetsec

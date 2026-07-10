@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package console
 
 import (
@@ -14,3 +16,5 @@ func (c Connect) Execute(args []string) {
 
     connect.Runner(args[2])
 }
+
+// Copyright (c) 2026 Zeronetsec

@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package showconfig
 
 import (
@@ -33,3 +35,5 @@ func Runner(configPath string) {
 
     fmt.Println()
 }
+
+// Copyright (c) 2026 Zeronetsec

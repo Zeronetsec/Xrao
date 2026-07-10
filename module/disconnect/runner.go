@@ -1,3 +1,5 @@
+// https://github.com/Zeronetsec/Xrao
+
 package disconnect
 
 import (
@@ -21,3 +23,5 @@ func Runner() {
     )
     _ = shell.ExecLivef("adb kill-server")
 }
+
+// Copyright (c) 2026 Zeronetsec
