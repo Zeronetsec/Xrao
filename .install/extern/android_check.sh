@@ -7,7 +7,7 @@ function install::extern::androidCheck() {
                 command tr -d '"'
             )"
 
-            if [[ "$os_id" =~ ^(ubuntu|debian|kali|parrot|fedora|arch|alpine|linux)$ ]]; then
+            if [[ "${os_id}" =~ ^(ubuntu|debian|kali|parrot|fedora|arch|alpine|linux)$ ]]; then
                 return 1
             fi
         fi
