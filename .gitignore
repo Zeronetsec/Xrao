@@ -1,2 +1,1 @@
-*.xr
-!config/config.xr
+.privdat/

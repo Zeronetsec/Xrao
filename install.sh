@@ -35,6 +35,7 @@ include : '(
     .install/zparser
     .install/extern/android_check
     .install/extern/request_storage
+    .install/extern/privdat
 )'
 
 __BACKUP__=false
@@ -46,6 +47,7 @@ while [[ ${#} -gt 0 ]]; do
     shift
 done
 
+install::extern::privdat
 install::extern::androidCheck
 install::extern::requestStorage
 install::inpackages
