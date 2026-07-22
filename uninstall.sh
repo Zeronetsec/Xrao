@@ -53,7 +53,7 @@ install::getinstall \
     "Removing: ${GG}${bin}/xrao${N}"
 
 install::getinstall \
-    "command rm -rf ${HOME}/.xrao"
+    "command rm -rf ${HOME}/.xrao" \
     "Removing: ${GG}${HOME}/.xrao${N}"
 
 echo -e "${GG}[+] ${N}Xrao removed"
