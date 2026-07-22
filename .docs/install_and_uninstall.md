@@ -3,23 +3,23 @@
 # Installation
 `install.sh` optional option:
 - `--backup`
+- └── create a backup of the existing source installation before replacing it.
 
-Use `--backup` to create a backup of the existing Xrao installation before replacing it.
-
-## Termux
+### Usage
 ```bash
 git clone https://github.com/Zeronetsec/Xrao
-cd Xrao
-chmod +x install.sh
-./install.sh
+bash Xrao/install.sh <option>
 ```
 
-## Uninstallation
+# Uninstallation
+`uninstall.sh` optional option:
+- `--remove-backup`
+- └── remove all backup found.
+
+### Usage
 ```bash
 export prefix="${PREFIX:-/usr}"
-rm -f "${prefix}/bin/xrao"
-rm -rf "${prefix}/opt/xrao"
-rm -rf "${HOME}/.xrao"
+bash $prefix/opt/xrao/uninstall.sh <option>
 ```
 
 <!-- Copyright (c) 2026 Zeronetsec -->

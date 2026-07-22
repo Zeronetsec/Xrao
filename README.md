@@ -25,9 +25,7 @@ The author is not responsible for any damage, data loss, or issues that may resu
 Quick install:
 ```bash
 git clone https://github.com/Zeronetsec/Xrao
-cd Xrao
-chmod +x install.sh
-./install.sh
+bash Xrao/install.sh
 ```
 For more detailed installation and uninstallation instructions, see [.docs/install_and_uninstall.md](.docs/install_and_uninstall.md).
 
