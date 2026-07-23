@@ -36,4 +36,4 @@ function include() {
         fi
     done <<< "${input_data}"
     return 0
-}
+}; readonly -f include
