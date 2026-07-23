@@ -33,6 +33,7 @@ include : '(
     .install/prepdir
     .install/zinstall
     .install/zparser
+    .install/chmod
     .install/extern/android_check
     .install/extern/request_storage
     .install/extern/privdat
@@ -53,6 +54,7 @@ install::extern::requestStorage
 install::inpackages
 install::prepdir
 install::installer
+install::chmod
 install::checker
 
 trap - EXIT
