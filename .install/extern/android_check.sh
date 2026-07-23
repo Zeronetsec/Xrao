@@ -1,6 +1,6 @@
 function install::extern::androidCheck() {
     function __android_check__() {
-        if [[ -f /etc/os-release ]]; then
+        if [[ -f "/etc/os-release" ]]; then
             local os_id="$(
                 command grep -E '^ID=' /etc/os-release | \
                 command cut -d= -f2 | \
