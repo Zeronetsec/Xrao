@@ -3,7 +3,9 @@
 <div align="center">
     <img src="https://img.shields.io/badge/Xrao-Version%200.1-blue?style=square&logo=go&v=1" />
     <img src="https://img.shields.io/badge/Supported%20OS-Android-blue?style=square&logo=android&v=1" />
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=square&logo=github&v=1" />
+    <a href="LICENSE">
+        <img src="https://img.shields.io/badge/License-Apache--2.0-blue?style=square&logo=github&v=1" />
+    </a>
 </div>
 
 # Xrao
@@ -38,8 +40,5 @@ xrao --generate --mode apply-global-only --config ~/mycustom_config.xr --out ~/m
 xrao --status
 ```
 And more commands.
-
-## License
-This project is licensed under the MIT License.
 
 <!-- Copyright (c) 2026 Zeronetsec -->
