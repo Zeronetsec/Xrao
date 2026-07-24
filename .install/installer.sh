@@ -47,7 +47,7 @@ function install::installer() {
 
         install::getinstall \
             "command go build -o xrao" \
-            "Building: ${GG}xrao${N}"
+            "Compiling: ${GG}xrao${N}"
         cd
     )
 
