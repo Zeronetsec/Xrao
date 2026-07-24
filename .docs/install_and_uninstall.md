@@ -15,6 +15,8 @@ bash Xrao/install.sh <option>
 `uninstall.sh` optional option:
 - `--remove-backup`
 - └── remove all backup found.
+- `--no-remove-config`
+- └── do not remove `~/.xrao`.
 
 ### Usage
 ```bash

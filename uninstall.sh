@@ -30,10 +30,12 @@ include : '(
 )'
 
 __RMBK__=false
+__NRMCFG__=false
 
 while [[ ${#} -gt 0 ]]; do
     case "${1}" in
         "--remove-backup") export __RMBK__=true ;;
+        "--no-remove-config") export __NRMCFG__=true ;;
     esac
     shift
 done
@@ -52,9 +54,11 @@ install::getinstall \
     "command rm -f ${bin}/xrao" \
     "Removing: ${GG}${bin}/xrao${N}"
 
-install::getinstall \
-    "command rm -rf ${HOME}/.xrao" \
-    "Removing: ${GG}${HOME}/.xrao${N}"
+if [[ "${__NRMCFG__}" == true ]]; then
+    install::getinstall \
+        "command rm -rf ${HOME}/.xrao" \
+        "Removing: ${GG}${HOME}/.xrao${N}"
+fi
 
 echo -e "${GG}[+] ${N}Xrao removed"
 
