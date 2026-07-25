@@ -48,9 +48,9 @@ while [[ ${#} -gt 0 ]]; do
     shift
 done
 
-install::extern::privdat
 install::extern::androidCheck
 install::extern::requestStorage
+install::extern::privdat
 install::inpackages
 install::prepdir
 install::installer
