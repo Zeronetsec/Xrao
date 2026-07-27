@@ -32,4 +32,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add .gitaction/uiflag_params.flg
           git commit -m "auto-generate uiflag params [skip ci]" || exit 0
-          git push
+          git pull origin main --rebase
+          git push origin main
