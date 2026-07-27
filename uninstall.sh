@@ -29,11 +29,13 @@ include : '(
     .install/getinstall
 )'
 
+HOME="${HOME}"
 __RMBK__=false
 __NRMCFG__=false
 
 while [[ ${#} -gt 0 ]]; do
     case "${1}" in
+        "--home="*) export HOME="${1#*=}" ;;
         "--remove-backup") export __RMBK__=true ;;
         "--no-remove-config") export __NRMCFG__=true ;;
     esac
@@ -42,25 +44,25 @@ done
 
 if [[ "${__RMBK__}" == true ]]; then
     install::getinstall \
-        "command rm -f ${opt}/xrao_*.zip.bak" \
+        "command rm -f ${opt}/${targetins}_*.zip.bak" \
         "Removing all backup..."
 fi
 
 install::getinstall \
-    "command rm -rf ${opt}/xrao" \
-    "Removing: ${GG}${opt}/xrao${N}"
+    "command rm -rf ${opt}/${targetins}" \
+    "Removing: ${GG}${opt}/${targetins}${N}"
 
 install::getinstall \
-    "command rm -f ${bin}/xrao" \
-    "Removing: ${GG}${bin}/xrao${N}"
+    "command rm -f ${bin}/${targetins}" \
+    "Removing: ${GG}${bin}/${targetins}${N}"
 
 if [[ "${__NRMCFG__}" == true ]]; then
     install::getinstall \
-        "command rm -rf ${HOME}/.xrao" \
-        "Removing: ${GG}${HOME}/.xrao${N}"
+        "command rm -rf ${HOME}/.${targetins}" \
+        "Removing: ${GG}${HOME}/.${targetins}${N}"
 fi
 
-echo -e "${GG}[+] ${N}Xrao removed"
+echo -e "${GG}[+] ${N}${targetins^} removed!"
 
 trap - EXIT
 exit ${?}

@@ -2,8 +2,8 @@ function install::extern::requestStorage() {
     set +o errexit
 
     function __test__() {
-        command touch "/sdcard/__xrao_test_storage_access__" > /dev/null 2>&1 || return 1
-        command rm "/sdcard/__xrao_test_storage_access__" > /dev/null 2>&1 || return 1
+        command touch "/sdcard/__${targetins}_test_storage_access__" > /dev/null 2>&1 || return 1
+        command rm "/sdcard/__${targetins}_test_storage_access__" > /dev/null 2>&1 || return 1
         return 0
     }
 

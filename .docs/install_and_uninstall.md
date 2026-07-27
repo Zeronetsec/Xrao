@@ -1,7 +1,9 @@
 <!-- https://github.com/Zeronetsec/Xrao -->
 
 # Installation
-`install.sh` optional option:
+`install.sh` optional options (can be used together):
+- `--home=<path>`
+- └── override `$HOME` value.
 - `--backup`
 - └── create a backup of the existing source installation before replacing it.
 
@@ -12,7 +14,9 @@ bash Xrao/install.sh <option>
 ```
 
 # Uninstallation
-`uninstall.sh` optional option:
+`uninstall.sh` optional options (can be used together):
+- `--home=<path>`
+- └── override `$HOME` value.
 - `--remove-backup`
 - └── remove all backup found.
 - `--no-remove-config`
