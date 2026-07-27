@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
 
+import sys
 import re
 from pathlib import Path
 
 def generate_uiflag_params():
     script_dir = Path(__file__).resolve().parent
-    project_root = script_dir.parent
+    project_root = script_dir.parent.parent
 
     target_md = project_root / ".docs" / "install_and_uninstall.md"
-    output_flg = script_dir / "uiflag_params.flg"
+    output_flg = project_root / ".laction" / "output" / "uiflag_params.flg"
 
     if not target_md.exists():
-        print(f"[!] File: {target_md} not found!")
-        return
+        print(
+            f"\x1b[1;31m[!] \x1b[0mFile: \x1b[0;32m{target_md} \x1b[0mnot found!",
+            file=sys.stderr,
+        )
+        sys.exit(1)
 
     with open(target_md, "r", encoding="utf-8") as f:
         lines = f.readlines()
@@ -85,7 +89,7 @@ def generate_uiflag_params():
     with open(output_flg, "w", encoding="utf-8") as f:
         f.write(output_content)
 
-    print(f"[+] Generated: {output_flg}")
+    print(f"\x1b[0;32m[+] \x1b[0mGenerated: \x1b[0;32m{output_flg}\x1b[0m")
 
 if __name__ == "__main__":
     generate_uiflag_params()

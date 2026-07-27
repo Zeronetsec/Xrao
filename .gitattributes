@@ -1,5 +1,5 @@
 .install/** linguist-vendored
-.gitaction/** linguist-vendored
+.laction/** linguist-vendored
 
 config/** linguist-vendored
 
