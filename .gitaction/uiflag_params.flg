@@ -1,0 +1,15 @@
+echo -e "Iflags:
+\x1b[0;32minstall.sh \x1b[0moptional options (can be used together):
+    \x1b[1;90m* \x1b[0;32m--home=<path>\x1b[0m
+    \x1b[1;90m└── \x1b[0;37moverride $HOME value.\x1b[0m
+    \x1b[1;90m* \x1b[0;32m--backup\x1b[0m
+    \x1b[1;90m└── \x1b[0;37mcreate a backup of the existing source installation before replacing it.\x1b[0m
+
+uflags:
+\x1b[0;32muninstall.sh \x1b[0moptional options (can be used together):
+    \x1b[1;90m* \x1b[0;32m--home=<path>\x1b[0m
+    \x1b[1;90m└── \x1b[0;37moverride $HOME value.\x1b[0m
+    \x1b[1;90m* \x1b[0;32m--remove-backup\x1b[0m
+    \x1b[1;90m└── \x1b[0;37mremove all backup found.\x1b[0m
+    \x1b[1;90m* \x1b[0;32m--no-remove-config\x1b[0m
+    \x1b[1;90m└── \x1b[0;37mdo not remove ~/.xrao.\x1b[0m"
