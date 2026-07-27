@@ -79,7 +79,7 @@ def generate_uiflag_params():
     iflags = format_section(sections["installation"])
     uflags = format_section(sections["uninstallation"])
 
-    output_content = f'echo -e "Iflags:\n{iflags}\n\nuflags:\n{uflags}"\n'
+    output_content = f'echo -e \'Iflags:\n{iflags}\n\nUflags:\n{uflags}\'\n'
 
     output_flg.parent.mkdir(parents=True, exist_ok=True)
     with open(output_flg, "w", encoding="utf-8") as f:
