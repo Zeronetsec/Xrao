@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import sys
 import re
 from pathlib import Path
@@ -12,10 +10,7 @@ def generate_uiflag_params():
     output_flg = project_root / ".laction" / "output" / "uiflag_params.flg"
 
     if not target_md.exists():
-        print(
-            f"\x1b[1;31m[!] \x1b[0mFile: \x1b[0;32m{target_md} \x1b[0mnot found!",
-            file=sys.stderr,
-        )
+        print(f"\x1b[1;31m[!] \x1b[0mFile: \x1b[0;32m{target_md} \x1b[0mnot found!")
         sys.exit(1)
 
     with open(target_md, "r", encoding="utf-8") as f:
