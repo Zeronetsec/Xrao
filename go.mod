@@ -1,5 +1,5 @@
 module github.com/Zeronetsec/Xrao
 
-go 1.26.5
+go 1.27.0
 
 require github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510
