@@ -65,5 +65,5 @@ install::symlink
 install::chmod
 install::checker
 
-trap - EXIT
+trap - ERR EXIT
 exit ${?}
