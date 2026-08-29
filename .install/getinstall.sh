@@ -4,7 +4,8 @@ function install::getinstall() {
 
     echo -ne "${B}[*] ${N}${desc}"
     eval "${cmd}" > /dev/null 2>&1
-
     local status=${?}
+
     echo -e " ${DG}- ${N}exit: ${GG}${status}${N}"
+    export __cmd__="${cmd}"
 }; readonly -f install::getinstall
