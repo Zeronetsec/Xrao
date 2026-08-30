@@ -7,5 +7,5 @@ function install::postins() {
 
     install::getinstall \
         "command mv ${root} ${opt}/${targetins}" \
-        "Moving: ${GG}${root} ${DG}-> ${GG}${opt}/${targetins}${N}"
+        "Moving: ${color_GG}${root} ${color_DG}-> ${color_GG}${opt}/${targetins}${color_N}"
 }; readonly -f install::postins

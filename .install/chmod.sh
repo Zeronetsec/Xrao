@@ -10,7 +10,7 @@ function install::chmod() {
         if [[ ! -x "${bin}/${i}" ]]; then
             install::getinstall \
                 "command chmod +x ${bin}/${i}" \
-                "Set permission for: ${GG}${bin}/${i}${N}"
+                "Set permission for: ${color_GG}${bin}/${i}${color_N}"
         fi
     done
 }; readonly -f install::chmod

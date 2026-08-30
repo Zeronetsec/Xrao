@@ -50,19 +50,19 @@ fi
 
 install::getinstall \
     "command rm -rf ${opt}/${targetins}" \
-    "Removing: ${GG}${opt}/${targetins}${N}"
+    "Removing: ${color_GG}${opt}/${targetins}${color_N}"
 
 install::getinstall \
     "command rm -f ${bin}/${targetins}" \
-    "Removing: ${GG}${bin}/${targetins}${N}"
+    "Removing: ${color_GG}${bin}/${targetins}${color_N}"
 
 if [[ "${__NRMCFG__}" == true ]]; then
     install::getinstall \
         "command rm -rf ${HOME}/.${targetins}" \
-        "Removing: ${GG}${HOME}/.${targetins}${N}"
+        "Removing: ${color_GG}${HOME}/.${targetins}${color_N}"
 fi
 
-echo -e "${GG}[+] ${N}${targetins^} removed!"
+echo -e "${color_GG}[+] ${color_N}${targetins^} removed!"
 
-trap - EXIT
+trap - ERR EXIT
 exit ${?}

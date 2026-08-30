@@ -5,5 +5,5 @@ function install::symlink() {
                 ${opt}/${targetins}/${targetsyml} \
                 ${bin}/${targetins}
         " \
-        "Symlink: ${GG}${opt}/${targetins}/${targetsyml} ${DG}-> ${GG}${bin}/${targetins}${N}"
+        "Symlink: ${color_GG}${opt}/${targetins}/${targetsyml} ${color_DG}-> ${color_GG}${bin}/${targetins}${color_N}"
 }; readonly -f install::symlink

@@ -9,8 +9,8 @@ function install::extern::requestStorage() {
 
     if ! __test__; then
         set -o errexit
-        echo -e "${R}[!] ${N}Storage access denied!"
-        echo -e "${R}[!] ${N}Please change access permissions using: ${GG}termux-setup-storage${N}"
+        echo -e "${color_R}[!] ${color_N}Storage access denied!"
+        echo -e "${color_R}[!] ${color_N}Please change access permissions using: ${color_GG}termux-setup-storage${color_N}"
         exit 1
     fi
 
