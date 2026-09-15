@@ -1,4 +1,6 @@
 import re
+import sys
+import subprocess
 from datetime import datetime
 from pathlib import Path
 
@@ -12,6 +14,19 @@ TARGET_FILE = project_root / "module" / "version" / "show_version.go"
 
 KEYWORD = "version = "
 VAL_WRAPPER = f'"{NEW_VERSION_STR}"'
+
+def check_changes():
+    status = subprocess.run(
+        ["git", "status", "--porcelain"],
+        capture_output=True,
+        text=True,
+    )
+
+    if not status.stdout.strip():
+        print(f"\x1b[0;33m[!] \x1b[0mClean repo, skip update version.")
+        sys.exit(0)
+
+check_changes()
 
 try:
     content = TARGET_FILE.read_text(encoding="utf-8")
@@ -33,3 +48,4 @@ try:
 
 except FileNotFoundError:
     print(f"\x1b[1;31m[!] \x1b[0mFile: \x1b[0;32m{TARGET_FILE} \x1b[0mnot found!")
+    sys.exit(1)
