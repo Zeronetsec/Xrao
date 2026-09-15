@@ -37,6 +37,7 @@ include : '(
     .install/backup
     .install/postins
     .install/symlink
+    .install/zsymlink
     .install/extern/android_check
     .install/extern/request_storage
     .install/extern/privdat

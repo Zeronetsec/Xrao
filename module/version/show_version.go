@@ -9,7 +9,7 @@ import (
 
 const (
     name = "Xrao"
-    version = "v0.1"
+    version = "v0.1.16092026"
     creator = "Zeronetsec"
     homepage = "https://github.com/Zeronetsec/Xrao"
 )
